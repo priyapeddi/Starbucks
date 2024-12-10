@@ -17,6 +17,7 @@ The Grader will post a message once your test results are ready.  The message wi
 <pre>
 Starbucks APP [8:50 PM]
 Tests: 16% - Design: 15 - Implementation: 55 - Bugs: 12 - Smells: 70 - http://sjsu.nguyenresearch.com/grader/cmpe202-teststudent
+Tests: 16% - Design: 15 - Implementation: 55 - Bugs: 12 - Smells: 70 
 </pre>
 
 ## Grader Test Results
@@ -26,21 +27,6 @@ Grader results are posted in the following files:
 * tests.html
 * bugs.html
 * codesmells.txt
-
-## Running Local Tests
-
-If you have Gradle 4.9 installed locally, you can run the following Makfile rules to get local results.  Please note that the JUnit tests will be only the ones locally available and not the full set of tests the Grader uses.
-
-<pre>
-test:
-    gradle test
-
-spotbugs:
-    gradle spotbugsMain
-
-codesmells:
-    java -jar DesigniteJava.jar -i src/main -o smells
-</pre>
 
 ## Setting Up a GitHub Webhook
 
